@@ -54,15 +54,17 @@
                 <p class="text-shadow"></p>
               </div>
             </div>
-            @foreach($s->imagen as $i )
+
+          @foreach($s->imagen as $i)
             <div class="carousel-item">
-              <img class="d-block img-fluid w-100" src="imgSitios/{{ $i->imgurl}}" alt="">
+              <img class="d-block img-fluid w-100" src="imgSitios/{{ $i->imgUrl}}" alt="">
               <div class="carousel-caption d-none d-md-block">
                 <h3 class="text-shadow">Slide</h3>
                 <p class="text-shadow">{{ $s->nombreSitio }}</p>
               </div>
             </div>
-             @endforeach
+            @endforeach
+             
             
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
